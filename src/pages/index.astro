@@ -6,6 +6,7 @@ import Note from '~/components/widgets/Note.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
   title: 'The Smart Home People — TP-Link Tapo Resource Hub',
@@ -98,5 +99,19 @@ const metadata = {
   <BlogLatestPosts
     title="Latest Newsletters & Deep-Dive Guides"
     information={`Our archive is constantly expanding with actionable advice. Dive into our latest guides to fix connection drops, audit power draw, and secure your property network.`}
+  />
+
+  <CallToAction
+    id="subscribe"
+    title="Join the Tapo Insider Circle"
+    subtitle="Get our weekly breakdown of hidden Tapo settings, local optimization fixes, and automation ideas tailored for homes, rentals, and farms."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Subscribe Now',
+        href: 'https://the-smart-home-people.kit.com/7619654db8',
+        icon: 'tabler:mail',
+      },
+    ]}
   />
 </Layout>
